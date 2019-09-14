@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <DisableFody>true</DisableFody>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DelegatedPropertySharp\DelegatedPropertySharp.csproj" />
+    <ProjectReference Include="..\FodyTools\FodyTools\FodyTools.csproj" />
+    <ProjectReference Include="..\Test.AssemblyToInject\Test.AssemblyToInject.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="DelegatedPropertySharp.Fody">
+      <HintPath>..\DelegatedPropertySharp.Fody\bin\Debug\netstandard2.0\DelegatedPropertySharp.Fody.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>

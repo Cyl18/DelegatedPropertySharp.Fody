@@ -3,7 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29230.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegatedPropertySharp.Fody", "DelegatedPropertySharp.Fody\DelegatedPropertySharp.Fody.csproj", "{2167C0DA-AC9A-49BD-9384-28B008D9C10C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelegatedPropertySharp.Fody", "DelegatedPropertySharp.Fody\DelegatedPropertySharp.Fody.csproj", "{2167C0DA-AC9A-49BD-9384-28B008D9C10C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FodyTools", "FodyTools\FodyTools\FodyTools.csproj", "{77D0A759-6EBC-433D-871F-C0F0B70783E2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelegatedPropertySharp", "DelegatedPropertySharp\DelegatedPropertySharp.csproj", "{BB94673A-CB04-4947-95E5-55B98937B1FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.AssemblyToInject", "Test.AssemblyToInject\Test.AssemblyToInject.csproj", "{10A2B5C0-7AB2-4F11-92B6-9722171DAFEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{5100A56E-7A18-4729-BE3B-48B6059831DA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2167C0DA-AC9A-49BD-9384-28B008D9C10C} = {2167C0DA-AC9A-49BD-9384-28B008D9C10C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExecutionTest", "ExecutionTest\ExecutionTest.csproj", "{D61FE20A-F4C8-4530-B552-53E3278A7062}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2167C0DA-AC9A-49BD-9384-28B008D9C10C} = {2167C0DA-AC9A-49BD-9384-28B008D9C10C}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +31,26 @@ Global
 		{2167C0DA-AC9A-49BD-9384-28B008D9C10C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2167C0DA-AC9A-49BD-9384-28B008D9C10C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2167C0DA-AC9A-49BD-9384-28B008D9C10C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77D0A759-6EBC-433D-871F-C0F0B70783E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77D0A759-6EBC-433D-871F-C0F0B70783E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77D0A759-6EBC-433D-871F-C0F0B70783E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77D0A759-6EBC-433D-871F-C0F0B70783E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB94673A-CB04-4947-95E5-55B98937B1FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB94673A-CB04-4947-95E5-55B98937B1FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB94673A-CB04-4947-95E5-55B98937B1FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB94673A-CB04-4947-95E5-55B98937B1FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10A2B5C0-7AB2-4F11-92B6-9722171DAFEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10A2B5C0-7AB2-4F11-92B6-9722171DAFEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10A2B5C0-7AB2-4F11-92B6-9722171DAFEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10A2B5C0-7AB2-4F11-92B6-9722171DAFEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5100A56E-7A18-4729-BE3B-48B6059831DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5100A56E-7A18-4729-BE3B-48B6059831DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5100A56E-7A18-4729-BE3B-48B6059831DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5100A56E-7A18-4729-BE3B-48B6059831DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D61FE20A-F4C8-4530-B552-53E3278A7062}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D61FE20A-F4C8-4530-B552-53E3278A7062}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D61FE20A-F4C8-4530-B552-53E3278A7062}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D61FE20A-F4C8-4530-B552-53E3278A7062}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

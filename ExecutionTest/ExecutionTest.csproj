@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DelegatedPropertySharp\DelegatedPropertySharp.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <WeaverFiles Include="$(SolutionDir)DelegatedPropertySharp.Fody\bin\$(Configuration)\netstandard2.0\DelegatedPropertySharp.Fody.dll" />
+  </ItemGroup>
+
+</Project>
