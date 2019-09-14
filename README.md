@@ -51,28 +51,28 @@ The idea comes from [Kotlin delegated property](https://kotlinlang.org/docs/refe
     public class Class1()
     {
         static Class1()
-		{
-			_handler0 = new Handler<Class1, int>();
-			_handler0.PropertyInfo = typeof(Class1).GetProperty("LazyObject1");
+        {
+            _handler0 = new Handler<Class1, int>();
+            _handler0.PropertyInfo = typeof(Class1).GetProperty("LazyObject1");
 
             _handler1 = new Handler<Class1, object>();
-			_handler1.PropertyInfo = typeof(Class1).GetProperty("LazyObject2");
-		}
+            _handler1.PropertyInfo = typeof(Class1).GetProperty("LazyObject2");
+        }
 
-		private static Handler<Class1, int> _handler0;
-		[Lazy]
-		public int LazyObject1
-		{
-			get => _handler0.Get(this);
-		}
+        private static Handler<Class1, int> _handler0;
+        [Lazy]
+        public int LazyObject1
+        {
+            get => _handler0.Get(this);
+        }
 
-		private static Handler<Class1, object> _handler1;
-		[Lazy]
-		public object LazyObject2
-		{
-			get => _handler1.Get(this);
+        private static Handler<Class1, object> _handler1;
+        [Lazy]
+        public object LazyObject2
+        {
+            get => _handler1.Get(this);
             set => _handler1.Set(this, value);
-		}
+        }
     }
     ...
 ```
