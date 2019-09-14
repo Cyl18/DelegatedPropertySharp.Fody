@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
-using System.Text;
 using Fody;
 using Mono.Cecil;
 using Mono.Cecil.Rocks;
@@ -10,8 +8,6 @@ using FodyTools;
 using Mono.Cecil.Cil;
 using FieldAttributes = Mono.Cecil.FieldAttributes;
 using ICustomAttributeProvider = Mono.Cecil.ICustomAttributeProvider;
-using MethodAttributes = Mono.Cecil.MethodAttributes;
-using ParameterAttributes = Mono.Cecil.ParameterAttributes;
 
 namespace DelegatedPropertySharp.Fody
 {
